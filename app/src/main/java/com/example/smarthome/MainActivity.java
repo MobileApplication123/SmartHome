@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, window.class));
                 }
                 if (position ==  2) {
-                    startActivity(new Intent(MainActivity.this, window.class));
+                    startActivity(new Intent(MainActivity.this, ac.class));
                 }
             }
         });
