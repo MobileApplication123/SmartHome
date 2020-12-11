@@ -30,7 +30,7 @@ public class lamp extends AppCompatActivity implements AntaresHTTPAPI.OnResponse
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_window);
+        setContentView(R.layout.activity_lamp);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Smart Lamp");
