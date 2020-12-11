@@ -9,18 +9,29 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#392196F3" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="71dp"
         android:background="#392196F3"
         android:text="Choose Your Device"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="240dp">
 
     </ListView>
 

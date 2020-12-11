@@ -19,9 +19,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     ListView listView;
-    String mTitle[] = {"Lamp", "Windows"};
-    String mDescription[] = {"Please click if you want to modify the lamp", "Please click if you want to modify the window"};
-    int images[] = {R.drawable.lampu, R.drawable.window,};
+    String mTitle[] = {"Lamp", "Windows", "Air Conditioner"};
+    String mDescription[] = {"Please click if you want to modify your lamp", "Please click if you want to modify your window", "Please click if you want to modify your Air Conditioner"};
+    int images[] = {R.drawable.lampu, R.drawable.window,R.drawable.ac};
     // so our images and other things are set in array
 
     @Override
@@ -46,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 if (position ==  1) {
                     startActivity(new Intent(MainActivity.this, window.class));
                 }
-
+                if (position ==  2) {
+                    startActivity(new Intent(MainActivity.this, window.class));
+                }
             }
         });
         // so item click is done now check list view
