@@ -11,9 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartHome">
-        <activity android:name=".ac"></activity>
-        <activity android:name=".window" />
-        <activity android:name=".lamp" />
+        <activity android:name=".ac"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".window"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".lamp"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
