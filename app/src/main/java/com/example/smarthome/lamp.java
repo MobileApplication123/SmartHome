@@ -7,14 +7,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import android.widget.ListView;
-import android.widget.TextView;
 import id.co.telkom.iot.AntaresHTTPAPI;
 import id.co.telkom.iot.AntaresResponse;
 
@@ -54,7 +54,7 @@ public class lamp extends AppCompatActivity implements AntaresHTTPAPI.OnResponse
             @Override
             public void onClick(View v) {
                 antaresAPIHTTP.storeDataofDevice(1,"c512e91e464f9119:2b31c59a19d78a99", "androidantares", "smartlamp", "{\\\"status\\\":\\\"1\\\"}");
-
+                Toast.makeText(getApplicationContext(),"Lamp is ON",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -62,6 +62,7 @@ public class lamp extends AppCompatActivity implements AntaresHTTPAPI.OnResponse
             @Override
             public void onClick(View v) {
                 antaresAPIHTTP.storeDataofDevice(1,"c512e91e464f9119:2b31c59a19d78a99", "androidantares", "smartlamp", "{\\\"status\\\":\\\"0\\\"}");
+                Toast.makeText(getApplicationContext(),"Lamp is Off",Toast.LENGTH_SHORT).show();
             }
         });
     }

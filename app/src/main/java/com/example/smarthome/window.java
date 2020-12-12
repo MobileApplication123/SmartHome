@@ -55,7 +55,7 @@ public class window extends AppCompatActivity implements AntaresHTTPAPI.OnRespon
             @Override
             public void onClick(View v) {
                 antaresAPIHTTP.storeDataofDevice(1,"c512e91e464f9119:2b31c59a19d78a99", "androidantares", "Windows", "{\\\"status\\\":\\\"1\\\"}");
-
+                Toast.makeText(getApplicationContext(),"Window is Open",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -63,6 +63,7 @@ public class window extends AppCompatActivity implements AntaresHTTPAPI.OnRespon
             @Override
             public void onClick(View v) {
                 antaresAPIHTTP.storeDataofDevice(1,"c512e91e464f9119:2b31c59a19d78a99", "androidantares", "Windows", "{\\\"status\\\":\\\"0\\\"}");
+                Toast.makeText(getApplicationContext(),"Window is Closed",Toast.LENGTH_SHORT).show();
             }
         });
     }
