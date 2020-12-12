@@ -53,7 +53,7 @@ public class fan extends AppCompatActivity implements AntaresHTTPAPI.OnResponseL
         btnOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                antaresAPIHTTP.storeDataofDevice(1,"c512e91e464f9119:2b31c59a19d78a99", "androidantares", "smartlamp", "{\\\"status\\\":\\\"1\\\"}");
+                antaresAPIHTTP.storeDataofDevice(1,"c512e91e464f9119:2b31c59a19d78a99", "androidantares", "fan", "{\\\"status\\\":\\\"1\\\"}");
                 Toast.makeText(getApplicationContext(),"Fan is ON",Toast.LENGTH_SHORT).show();
             }
         });
@@ -61,7 +61,7 @@ public class fan extends AppCompatActivity implements AntaresHTTPAPI.OnResponseL
         btnOff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                antaresAPIHTTP.storeDataofDevice(1,"c512e91e464f9119:2b31c59a19d78a99", "androidantares", "smartlamp", "{\\\"status\\\":\\\"0\\\"}");
+                antaresAPIHTTP.storeDataofDevice(1,"c512e91e464f9119:2b31c59a19d78a99", "androidantares", "fan", "{\\\"status\\\":\\\"0\\\"}");
                 Toast.makeText(getApplicationContext(),"Fan is Off",Toast.LENGTH_SHORT).show();
             }
         });
@@ -80,7 +80,7 @@ public class fan extends AppCompatActivity implements AntaresHTTPAPI.OnResponseL
         switch (item.getItemId())
         {
             case R.id.btnRefresh:
-                antaresAPIHTTP.getLatestDataofDevice("c512e91e464f9119:2b31c59a19d78a99","androidantares","smartlamp");
+                antaresAPIHTTP.getLatestDataofDevice("c512e91e464f9119:2b31c59a19d78a99","androidantares","fan");
                 break;
 
         }
