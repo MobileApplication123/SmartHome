@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
     String mTitle[] = {"Lamp", "Windows", "Air Conditioner","fan"};
     String mDescription[] = {"Please click if you want to modify your lamp", "Please click if you want to modify your window", "Please click if you want to modify your Air Conditioner","Please click if you want to modify your fan"};
-    int images[] = {R.drawable.lampu, R.drawable.window,R.drawable.ac,R.drawable.fan};
+    int images[] = {R.drawable.lampu, R.drawable.jendela,R.drawable.ac,R.drawable.fan};
     // so our images and other things are set in array
 
     @Override
