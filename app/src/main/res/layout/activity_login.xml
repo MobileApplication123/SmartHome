@@ -59,6 +59,8 @@
             android:id="@+id/et_password"
             android:hint="Enter Password"
             android:textColor="@android:color/white"
+            android:ems="10"
+            android:inputType="textPassword"
             android:textColorHint="@android:color/transparent"/>
 
     </LinearLayout>
