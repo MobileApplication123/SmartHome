@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartHome">
-        <activity android:name=".fan"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".Switch"></activity>
+        <activity
+            android:name=".fan"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".login"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
@@ -31,7 +33,7 @@
         <activity
             android:name=".lamp"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

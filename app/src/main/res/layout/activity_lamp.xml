@@ -23,8 +23,8 @@
 
     <TextView
         android:id="@+id/txtData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="109dp"
+        android:layout_height="31dp"
         android:text="No Data"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,7 +32,8 @@
         app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintVertical_bias="0.068"
+        android:textSize="24sp"/>
 
     <Button
         android:id="@+id/btnOn"
