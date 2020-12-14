@@ -32,7 +32,7 @@ public class login extends AppCompatActivity {
                             login.this
                     );
                     builder.setIcon(R.drawable.ic_check);
-                    builder.setTitle("Login Succesfully");
+                    builder.setTitle("Login Success");
                     builder.setMessage("Welcome Admin");
 
                     builder.setNeutralButton("Yes", new DialogInterface.OnClickListener() {
